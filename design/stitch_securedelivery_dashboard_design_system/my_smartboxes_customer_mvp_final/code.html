@@ -1,0 +1,248 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"outline":"#76777d","surface-container-highest":"#e4e2e4","on-tertiary-fixed-variant":"#574425","error":"#ba1a1a","on-secondary-container":"#006f66","error-container":"#ffdad6","surface-bright":"#fcf8fa","inverse-surface":"#303032","secondary-fixed":"#89f5e7","surface-container-low":"#f6f3f5","on-error-container":"#93000a","secondary":"#006a61","surface-dim":"#dcd9db","on-secondary-fixed-variant":"#005049","on-surface":"#1b1b1d","on-primary-container":"#7c839b","surface-variant":"#e4e2e4","secondary-fixed-dim":"#6bd8cb","on-primary":"#ffffff","inverse-primary":"#bec6e0","background":"#fcf8fa","on-tertiary-fixed":"#271901","surface-container-lowest":"#ffffff","on-secondary-fixed":"#00201d","on-tertiary":"#ffffff","on-primary-fixed":"#131b2e","surface-container-high":"#eae7e9","primary-fixed-dim":"#bec6e0","surface-container":"#f0edef","primary-fixed":"#dae2fd","on-secondary":"#ffffff","inverse-on-surface":"#f3f0f2","on-primary-fixed-variant":"#3f465c","surface-tint":"#565e74","primary-container":"#131b2e","surface":"#fcf8fa","on-tertiary-container":"#98805d","on-surface-variant":"#45464d","tertiary":"#000000","outline-variant":"#c6c6cd","secondary-container":"#86f2e4","tertiary-fixed":"#fcdeb5","on-error":"#ffffff","on-background":"#1b1b1d","primary":"#000000","tertiary-container":"#271901","tertiary-fixed-dim":"#dec29a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"sm":"12px","md":"16px","xl":"32px","lg":"24px","container-max":"1440px","xs":"8px","base":"4px","gutter":"16px"},"fontFamily":{"display-lg":["Inter"],"data-mono":["JetBrains Mono"],"body-lg":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"label-caps":["Inter"],"headline-md":["Inter"]},"fontSize":{"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"data-mono":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"28px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 flex items-center px-lg gap-sm border-b border-outline-variant/10"><span class="material-symbols-outlined text-secondary text-[28px]">verified_user</span><span class="font-headline-sm text-on-surface tracking-tight uppercase">SecureDelivery</span></div><nav class="flex-1 py-lg px-md space-y-base overflow-y-auto" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold"><div class="px-sm mb-xs text-on-surface-variant font-label-caps">Operational Dashboard</div><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="overview" href="#"><span class="material-symbols-outlined mr-md">dashboard</span>Overview</a><a aria-current="page" class="flex items-center px-sm py-sm rounded-lg transition-all bg-secondary-container text-on-secondary-container font-semibold" data-path="smartboxes" href="#"><span class="material-symbols-outlined mr-md">package_2</span>SmartBoxes</a><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="events" href="#"><span class="material-symbols-outlined mr-md">history</span>Events</a><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="requests" href="#"><span class="material-symbols-outlined mr-md">pending_actions</span>SmartBox Requests</a><div class="pt-lg px-sm mb-xs text-on-surface-variant font-label-caps">System Support</div><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="support" href="#"><span class="material-symbols-outlined mr-md">support_agent</span>Support</a><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined mr-md">notifications</span>Notifications</a></nav><div class="p-md bg-surface-container"><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined mr-md">settings</span>Settings</a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 px-xl flex items-center justify-between border-b border-outline-variant/10 shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-md bg-surface-container-low px-md py-xs rounded-full border border-outline-variant/20 w-96"><span class="material-symbols-outlined text-outline">search</span><input class="bg-transparent border-none outline-none text-body-md w-full text-on-surface" placeholder="Search my SmartBoxes or events..." type="text"/></div><div class="flex items-center gap-lg"><div class="flex items-center gap-xs px-sm py-[2px] rounded-full bg-secondary-container/20 border border-secondary-container/30"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="text-label-caps text-on-secondary-container">System Connected</span></div><div class="flex items-center gap-md ml-md"><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">translate</span><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">help_outline</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer ml-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 min-h-screen bg-background"><div class="flex flex-col w-full px-xl py-lg space-y-xl">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-display-lg text-on-surface">My SmartBoxes</h1>
+<p class="font-body-md text-on-surface-variant mt-1">Monitor your SmartBoxes and delivery-quality status.</p>
+</div>
+<button class="bg-secondary hover:bg-secondary/90 text-on-secondary font-label-caps px-md py-sm rounded-lg flex items-center gap-xs transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">add</span> REQUEST SMARTBOX</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="bg-surface-container p-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between h-32 group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="font-label-caps text-on-surface-variant uppercase tracking-wider relative z-10">Total SmartBoxes</span>
+<div class="flex items-end justify-between relative z-10">
+<span class="font-data-mono text-[32px] leading-none font-bold text-on-surface">120</span>
+<span class="material-symbols-outlined text-outline-variant text-[24px]">inventory_2</span>
+</div>
+</div>
+<div class="bg-surface-container p-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between h-32 group border-l-4" style="border-left-color: var(--color-secondary);">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="font-label-caps text-on-surface-variant uppercase tracking-wider relative z-10">Online</span>
+<div class="flex items-end justify-between relative z-10">
+<span class="font-data-mono text-[32px] leading-none font-bold text-on-surface">115</span>
+<div class="flex items-center gap-xs text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-data-mono text-[14px]">96%</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between h-32 group border-l-4 border-error">
+<div class="absolute inset-0 bg-gradient-to-br from-error/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="font-label-caps text-on-surface-variant uppercase tracking-wider relative z-10">Needs Attention</span>
+<div class="flex items-end justify-between relative z-10">
+<span class="font-data-mono text-[32px] leading-none font-bold text-on-surface">5</span>
+<span class="material-symbols-outlined text-error text-[24px]">warning</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-md py-sm bg-surface-container-low flex justify-between items-center">
+<div class="flex items-center gap-md">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="pl-[36px] pr-sm py-xs bg-surface-container rounded-md font-body-sm text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-1 focus:ring-primary w-64 transition-all" placeholder="Filter SmartBoxes..." type="text"/>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface flex items-center gap-xs font-label-caps px-sm py-xs rounded-md hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+          FILTER
+        </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-caps uppercase tracking-wider">
+<th class="py-sm px-md font-semibold whitespace-nowrap">SmartBox</th>
+<th class="py-sm px-md font-semibold whitespace-nowrap">Status</th>
+<th class="py-sm px-md font-semibold whitespace-nowrap">Health</th>
+<th class="py-sm px-md font-semibold whitespace-nowrap">Monitoring</th>
+<th class="py-sm px-md font-semibold whitespace-nowrap">Connectivity</th>
+<th class="py-sm px-md font-semibold whitespace-nowrap">Battery</th>
+<th class="py-sm px-md font-semibold whitespace-nowrap text-right">Last Comm.</th>
+<th class="py-sm px-sm"></th>
+</tr>
+</thead>
+<tbody class="font-body-md text-on-surface" id="smartbox-table-body">
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer border-b border-outline-variant/20 last:border-b-0">
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[20px]">package_2</span>
+<div>
+<div class="font-headline-sm text-on-surface text-[14px]">SB-88291-A</div>
+<div class="font-data-mono text-[11px] text-on-surface-variant">SER-9021-X</div>
+</div>
+</div>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<span class="inline-flex items-center gap-xs px-[6px] py-[2px] rounded-full bg-secondary-container/30 text-on-secondary-container font-label-caps text-[10px]">
+                Active
+              </span>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-xs text-secondary font-label-caps text-[11px]">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                Healthy
+              </div>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<span class="font-data-mono text-[12px]">Monitoring</span>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-data-mono text-[12px]">Online</span>
+</div>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">battery_full_alt</span>
+<span class="font-data-mono text-[12px]">98%</span>
+</div>
+</td>
+<td class="py-sm px-md whitespace-nowrap text-right font-data-mono text-[12px] text-on-surface-variant">
+              Just now
+            </td>
+<td class="py-sm px-sm text-right">
+<button class="text-outline-variant hover:text-on-surface transition-colors p-[2px] rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer border-b border-outline-variant/20 last:border-b-0">
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[20px]">package_2</span>
+<div>
+<div class="font-headline-sm text-on-surface text-[14px]">SB-77342-C</div>
+<div class="font-data-mono text-[11px] text-on-surface-variant">SER-4412-Y</div>
+</div>
+</div>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<span class="inline-flex items-center gap-xs px-[6px] py-[2px] rounded-full bg-secondary-container/30 text-on-secondary-container font-label-caps text-[10px]">
+                Active
+              </span>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-xs text-on-tertiary-container font-label-caps text-[11px]">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+                Warning
+              </div>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<span class="font-data-mono text-[12px]">Monitoring</span>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-data-mono text-[12px]">Online</span>
+</div>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-xs text-on-tertiary-container">
+<span class="material-symbols-outlined text-[18px]">battery_low</span>
+<span class="font-data-mono text-[12px]">18%</span>
+</div>
+</td>
+<td class="py-sm px-md whitespace-nowrap text-right font-data-mono text-[12px] text-on-surface-variant">
+              2m ago
+            </td>
+<td class="py-sm px-sm text-right">
+<button class="text-outline-variant hover:text-on-surface transition-colors p-[2px] rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer border-b border-outline-variant/20 last:border-b-0">
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[20px]">package_2</span>
+<div>
+<div class="font-headline-sm text-on-surface text-[14px]">SB-11902-B</div>
+<div class="font-data-mono text-[11px] text-on-surface-variant">SER-8833-Z</div>
+</div>
+</div>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<span class="inline-flex items-center gap-xs px-[6px] py-[2px] rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-[10px]">
+                Inactive
+              </span>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-xs text-error font-label-caps text-[11px]">
+<span class="material-symbols-outlined text-[16px]">error</span>
+                Critical
+              </div>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<span class="font-data-mono text-[12px] text-outline">Stopped</span>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-data-mono text-[12px] text-error">Offline</span>
+</div>
+</td>
+<td class="py-sm px-md whitespace-nowrap">
+<div class="flex items-center gap-xs text-error">
+<span class="material-symbols-outlined text-[18px]">battery_0_bar</span>
+<span class="font-data-mono text-[12px]">0%</span>
+</div>
+</td>
+<td class="py-sm px-md whitespace-nowrap text-right font-data-mono text-[12px] text-on-surface-variant">
+              14h ago
+            </td>
+<td class="py-sm px-sm text-right">
+<button class="text-outline-variant hover:text-on-surface transition-colors p-[2px] rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="px-md py-sm bg-surface-container-low border-t border-outline-variant/20 flex items-center justify-between font-data-mono text-[12px] text-on-surface-variant">
+<span>Showing 1-3 of 120</span>
+<div class="flex gap-xs">
+<button class="px-sm py-[2px] rounded border border-outline-variant/30 hover:bg-surface-container disabled:opacity-50" disabled="">&lt;</button>
+<button class="px-sm py-[2px] rounded border border-outline-variant/30 bg-surface-container-high text-on-surface">1</button>
+<button class="px-sm py-[2px] rounded border border-outline-variant/30 hover:bg-surface-container">2</button>
+<button class="px-sm py-[2px] rounded border border-outline-variant/30 hover:bg-surface-container">3</button>
+<button class="px-sm py-[2px] rounded border border-outline-variant/30 hover:bg-surface-container">&gt;</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interaction for table row hover states and context menu clicks
+  document.addEventListener('DOMContentLoaded', () => {
+    const tableRows = document.querySelectorAll('#smartbox-table-body tr');
+    tableRows.forEach(row => {
+      row.addEventListener('click', (e) => {
+        // Ignore clicks on the action button
+        if(!e.target.closest('button')) {
+            // Mock navigation or expansion
+            console.log('Row clicked:', row.querySelector('.font-headline-sm').textContent);
+            
+            // Visual feedback
+            const originalBg = row.className;
+            row.classList.add('bg-surface-container-high');
+            setTimeout(() => {
+                row.className = originalBg;
+            }, 150);
+        }
+      });
+    });
+
+    const actionButtons = document.querySelectorAll('#smartbox-table-body button');
+    actionButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            console.log('Context menu opened');
+            // Mock menu open logic would go here
+        })
+    })
+  });
+</script></main></div></body></html>

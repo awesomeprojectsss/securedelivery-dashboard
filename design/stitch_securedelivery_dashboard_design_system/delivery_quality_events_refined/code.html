@@ -1,0 +1,256 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"outline":"#76777d","surface-container-highest":"#e4e2e4","on-tertiary-fixed-variant":"#574425","error":"#ba1a1a","on-secondary-container":"#006f66","error-container":"#ffdad6","surface-bright":"#fcf8fa","inverse-surface":"#303032","secondary-fixed":"#89f5e7","surface-container-low":"#f6f3f5","on-error-container":"#93000a","secondary":"#006a61","surface-dim":"#dcd9db","on-secondary-fixed-variant":"#005049","on-surface":"#1b1b1d","on-primary-container":"#7c839b","surface-variant":"#e4e2e4","secondary-fixed-dim":"#6bd8cb","on-primary":"#ffffff","inverse-primary":"#bec6e0","background":"#fcf8fa","on-tertiary-fixed":"#271901","surface-container-lowest":"#ffffff","on-secondary-fixed":"#00201d","on-tertiary":"#ffffff","on-primary-fixed":"#131b2e","surface-container-high":"#eae7e9","primary-fixed-dim":"#bec6e0","surface-container":"#f0edef","primary-fixed":"#dae2fd","on-secondary":"#ffffff","inverse-on-surface":"#f3f0f2","on-primary-fixed-variant":"#3f465c","surface-tint":"#565e74","primary-container":"#131b2e","surface":"#fcf8fa","on-tertiary-container":"#98805d","on-surface-variant":"#45464d","tertiary":"#000000","outline-variant":"#c6c6cd","secondary-container":"#86f2e4","tertiary-fixed":"#fcdeb5","on-error":"#ffffff","on-background":"#1b1b1d","primary":"#000000","tertiary-container":"#271901","tertiary-fixed-dim":"#dec29a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"sm":"12px","md":"16px","xl":"32px","lg":"24px","container-max":"1440px","xs":"8px","base":"4px","gutter":"16px"},"fontFamily":{"display-lg":["Inter"],"data-mono":["JetBrains Mono"],"body-lg":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"label-caps":["Inter"],"headline-md":["Inter"]},"fontSize":{"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"data-mono":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"28px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 flex items-center px-lg gap-sm border-b border-outline-variant/10"><span class="material-symbols-outlined text-secondary text-[28px]">verified_user</span><span class="font-headline-sm text-on-surface tracking-tight uppercase">SecureDelivery</span></div><nav class="flex-1 py-lg px-md space-y-base overflow-y-auto" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold"><div class="px-sm mb-xs text-on-surface-variant font-label-caps">Operational Dashboard</div><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="overview" href="#"><span class="material-symbols-outlined mr-md">dashboard</span>Overview</a><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="customers" href="#"><span class="material-symbols-outlined mr-md">group</span>Customers</a><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="smartboxes" href="#"><span class="material-symbols-outlined mr-md">package_2</span>SmartBoxes</a><a aria-current="page" class="flex items-center px-sm py-sm rounded-lg transition-all bg-secondary-container text-on-secondary-container font-semibold" data-path="events" href="#"><span class="material-symbols-outlined mr-md">history</span>Events</a><div class="pt-lg px-sm mb-xs text-on-surface-variant font-label-caps">Administration</div><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="users" href="#"><span class="material-symbols-outlined mr-md">person_search</span>Users</a><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="administrators" href="#"><span class="material-symbols-outlined mr-md">shield_person</span>Administrators</a><div class="pt-lg px-sm mb-xs text-on-surface-variant font-label-caps">System Support</div><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="support" href="#"><span class="material-symbols-outlined mr-md">support_agent</span>Support</a><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined mr-md">notifications</span>Notifications</a></nav><div class="p-md bg-surface-container"><a class="flex items-center px-sm py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined mr-md">settings</span>Settings</a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 px-xl flex items-center justify-between border-b border-outline-variant/10 shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-md bg-surface-container-low px-md py-xs rounded-full border border-outline-variant/20 w-96"><span class="material-symbols-outlined text-outline">search</span><input class="bg-transparent border-none outline-none text-body-md w-full text-on-surface" placeholder="Search telemetry, serials, or users..." type="text"/></div><div class="flex items-center gap-lg"><div class="flex items-center gap-xs px-sm py-[2px] rounded-full bg-secondary-container/20 border border-secondary-container/30"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="text-label-caps text-on-secondary-container">System Connected</span></div><div class="flex items-center gap-md ml-md"><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">translate</span><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">help_outline</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer ml-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 min-h-screen bg-background"><div class="flex flex-col w-full h-full relative" id="events-view">
+<!-- Header & Filters -->
+<div class="px-xl pt-lg pb-md flex flex-col gap-md sticky top-0 bg-surface/95 backdrop-blur z-20">
+<div class="flex items-center justify-between">
+<h1 class="font-headline-md text-headline-md text-on-surface">Delivery-Quality Events</h1>
+</div>
+<!-- Filter Bar -->
+<div class="flex flex-wrap items-center gap-sm bg-surface-container-low p-sm rounded-lg">
+<div class="flex items-center bg-surface px-sm py-xs rounded border border-transparent shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-xs">calendar_today</span>
+<select class="bg-transparent font-body-md text-body-md text-on-surface outline-none appearance-none pr-md">
+<option>Last 24 Hours</option>
+<option>Last 7 Days</option>
+<option>Last 30 Days</option>
+<option>Custom Range...</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] ml-auto pointer-events-none -ml-xl">arrow_drop_down</span>
+</div>
+<div class="flex items-center bg-surface px-sm py-xs rounded border border-transparent shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-xs">warning</span>
+<select class="bg-transparent font-body-md text-body-md text-on-surface outline-none appearance-none pr-md">
+<option>All Severities</option>
+<option>Critical</option>
+<option>Warning</option>
+<option>Info</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] ml-auto pointer-events-none -ml-xl">arrow_drop_down</span>
+</div>
+<div class="flex items-center bg-surface px-sm py-xs rounded border border-transparent shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-xs">category</span>
+<select class="bg-transparent font-body-md text-body-md text-on-surface outline-none appearance-none pr-md"><option>All Event Types</option><option>Strong Impact</option><option>Critical Inclination</option><option>Possible Fall</option><option>Abnormal Movement</option></select>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] ml-auto pointer-events-none -ml-xl">arrow_drop_down</span>
+</div>
+<div class="flex-1 min-w-[200px]"></div>
+<div class="flex items-center bg-surface px-sm py-xs rounded border border-transparent shadow-sm flex-1 min-w-[200px] max-w-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-xs">search</span>
+<input class="bg-transparent font-body-md text-body-md text-on-surface outline-none w-full" placeholder="Search Box ID or Customer..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="px-xl pb-xl flex-1 relative" id="table-container">
+<!-- Loading State (Hidden by default, shown via JS) -->
+<div class="hidden absolute inset-0 bg-surface/50 backdrop-blur-sm z-10 flex-col px-xl pt-0" id="loading-state">
+<div class="w-full h-[40px] bg-surface-container animate-pulse rounded mb-base"></div>
+<div class="w-full h-[40px] bg-surface-container animate-pulse rounded mb-base"></div>
+<div class="w-full h-[40px] bg-surface-container animate-pulse rounded mb-base"></div>
+<div class="w-full h-[40px] bg-surface-container animate-pulse rounded mb-base"></div>
+<div class="w-full h-[40px] bg-surface-container animate-pulse rounded mb-base"></div>
+</div>
+<!-- Empty State (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-xl my-xl bg-surface-container-low rounded-xl shadow-inner" id="empty-state">
+<span class="material-symbols-outlined text-on-surface-variant text-[48px] mb-sm opacity-50">history_toggle_off</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">No events recorded</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-center max-w-md">There are no telemetry events matching your current filter criteria for this period.</p>
+<button class="mt-md px-md py-sm bg-surface text-on-surface rounded font-label-caps text-label-caps shadow hover:bg-surface-container transition-colors" onclick="resetFilters()">Clear Filters</button>
+</div>
+<!-- Table -->
+<div class="bg-surface rounded-xl shadow-sm overflow-hidden border border-transparent">
+<table class="w-full text-left border-collapse" id="events-table">
+<thead class="bg-surface-container-high border-b border-surface-container-highest">
+<tr>
+<th class="px-sm py-xs font-label-caps text-label-caps text-on-surface-variant w-[220px]">Event Type</th>
+<th class="px-sm py-xs font-label-caps text-label-caps text-on-surface-variant w-[100px]">Severity</th>
+<th class="px-sm py-xs font-label-caps text-label-caps text-on-surface-variant w-[180px]">SmartBox</th>
+<th class="px-sm py-xs font-label-caps text-label-caps text-on-surface-variant w-[180px]">Customer</th>
+<th class="px-sm py-xs font-label-caps text-label-caps text-on-surface-variant w-[180px]">Timestamp</th>
+<th class="px-sm py-xs font-label-caps text-label-caps text-on-surface-variant min-w-[200px]">Location</th>
+<th class="px-sm py-xs font-label-caps text-label-caps text-on-surface-variant w-[100px] text-right">Speed</th>
+<th class="px-sm py-xs w-[40px]"></th>
+</tr>
+</thead>
+<tbody class="bg-surface">
+<!-- Row 1 -->
+<tr class="border-b border-surface-container hover:bg-surface-container-lowest transition-colors h-[48px] group">
+<td class="px-sm py-xs">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-error text-[18px]">flash_on</span>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Strong Impact</span>
+</div>
+</td>
+<td class="px-sm py-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Critical
+              </span>
+</td>
+<td class="px-sm py-xs">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface">SBX-9921-A</span>
+<span class="font-body-md text-[11px] leading-tight text-on-surface-variant truncate">MedTech Alpha</span>
+</div>
+</td>
+<td class="px-sm py-xs font-body-md text-body-md text-on-surface truncate">
+              NovaBio Logistics
+            </td>
+<td class="px-sm py-xs font-data-mono text-data-mono text-on-surface-variant">
+              2023-10-27 14:32:01
+            </td>
+<td class="px-sm py-xs">
+<a class="flex items-center gap-xs font-body-md text-body-md text-primary hover:underline truncate" href="#"><span class="material-symbols-outlined text-[16px]">location_on</span>View Location</a>
+</td>
+<td class="px-sm py-xs font-data-mono text-data-mono text-on-surface text-right">
+              105 km/h
+            </td>
+<td class="px-sm py-xs text-right opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary text-[20px]">more_vert</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="border-b border-surface-container hover:bg-surface-container-lowest transition-colors h-[48px] group">
+<td class="px-sm py-xs">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[18px]">screen_rotation</span>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Critical Inclination</span>
+</div>
+</td>
+<td class="px-sm py-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span> Warning
+              </span>
+</td>
+<td class="px-sm py-xs">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface">SBX-4410-B</span>
+<span class="font-body-md text-[11px] leading-tight text-on-surface-variant truncate">ColdChain Beta</span>
+</div>
+</td>
+<td class="px-sm py-xs font-body-md text-body-md text-on-surface truncate">
+              PharmaCorp Inc.
+            </td>
+<td class="px-sm py-xs font-data-mono text-data-mono text-on-surface-variant">
+              2023-10-27 11:15:44
+            </td>
+<td class="px-sm py-xs">
+<a class="flex items-center gap-xs font-body-md text-body-md text-primary hover:underline truncate" href="#"><span class="material-symbols-outlined text-[16px]">location_on</span>View Location</a>
+</td>
+<td class="px-sm py-xs font-data-mono text-data-mono text-on-surface text-right">
+              0 km/h
+            </td>
+<td class="px-sm py-xs text-right opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary text-[20px]">more_vert</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="border-b border-surface-container hover:bg-surface-container-lowest transition-colors h-[48px] group">
+<td class="px-sm py-xs">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[18px]">falling</span>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Possible Fall</span>
+</div>
+</td>
+<td class="px-sm py-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span> Warning
+              </span>
+</td>
+<td class="px-sm py-xs">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface">SBX-8802-C</span>
+<span class="font-body-md text-[11px] leading-tight text-on-surface-variant truncate">Fragile Core</span>
+</div>
+</td>
+<td class="px-sm py-xs font-body-md text-body-md text-on-surface truncate">
+              Quantum Optics
+            </td>
+<td class="px-sm py-xs font-data-mono text-data-mono text-on-surface-variant">
+              2023-10-27 09:02:12
+            </td>
+<td class="px-sm py-xs">
+<a class="flex items-center gap-xs font-body-md text-body-md text-primary hover:underline truncate" href="#"><span class="material-symbols-outlined text-[16px]">location_on</span>View Location</a>
+</td>
+<td class="px-sm py-xs font-data-mono text-data-mono text-on-surface text-right">
+              5 km/h
+            </td>
+<td class="px-sm py-xs text-right opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary text-[20px]">more_vert</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="border-b border-surface-container hover:bg-surface-container-lowest transition-colors h-[48px] group">
+<td class="px-sm py-xs">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">vibration</span>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Abnormal Movement</span>
+</div>
+</td>
+<td class="px-sm py-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Info
+              </span>
+</td>
+<td class="px-sm py-xs">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface">SBX-1194-D</span>
+<span class="font-body-md text-[11px] leading-tight text-on-surface-variant truncate">Standard Transit</span>
+</div>
+</td>
+<td class="px-sm py-xs font-body-md text-body-md text-on-surface truncate">
+              NovaBio Logistics
+            </td>
+<td class="px-sm py-xs font-data-mono text-data-mono text-on-surface-variant">
+              2023-10-26 18:45:00
+            </td>
+<td class="px-sm py-xs">
+<a class="flex items-center gap-xs font-body-md text-body-md text-primary hover:underline truncate" href="#"><span class="material-symbols-outlined text-[16px]">location_on</span>View Location</a>
+</td>
+<td class="px-sm py-xs font-data-mono text-data-mono text-on-surface text-right">
+              85 km/h
+            </td>
+<td class="px-sm py-xs text-right opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary text-[20px]">more_vert</button>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Pagination -->
+<div class="flex items-center justify-between p-sm border-t border-surface-container bg-surface-container-low">
+<span class="font-body-md text-body-md text-on-surface-variant">Showing 1 to 4 of 248 entries</span>
+<div class="flex items-center gap-xs">
+<button class="w-8 h-8 flex items-center justify-center rounded bg-surface border border-outline-variant/30 text-on-surface-variant hover:bg-surface-container transition-colors disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded bg-primary text-on-primary font-data-mono text-[13px]">1</button>
+<button class="w-8 h-8 flex items-center justify-center rounded bg-surface border border-outline-variant/30 text-on-surface hover:bg-surface-container transition-colors font-data-mono text-[13px]">2</button>
+<button class="w-8 h-8 flex items-center justify-center rounded bg-surface border border-outline-variant/30 text-on-surface hover:bg-surface-container transition-colors font-data-mono text-[13px]">3</button>
+<span class="text-on-surface-variant px-xs">...</span>
+<button class="w-8 h-8 flex items-center justify-center rounded bg-surface border border-outline-variant/30 text-on-surface hover:bg-surface-container transition-colors font-data-mono text-[13px]">25</button>
+<button class="w-8 h-8 flex items-center justify-center rounded bg-surface border border-outline-variant/30 text-on-surface-variant hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interaction simulation for demo purposes
+  function resetFilters() {
+    const table = document.getElementById('events-table');
+    const emptyState = document.getElementById('empty-state');
+    const loading = document.getElementById('loading-state');
+    
+    emptyState.classList.add('hidden');
+    table.parentElement.classList.add('hidden');
+    loading.classList.remove('hidden');
+    loading.classList.add('flex');
+    
+    setTimeout(() => {
+      loading.classList.add('hidden');
+      loading.classList.remove('flex');
+      table.parentElement.classList.remove('hidden');
+    }, 800);
+  }
+</script></main></div></body></html>
