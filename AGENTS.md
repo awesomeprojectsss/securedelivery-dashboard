@@ -102,6 +102,14 @@ Before implementing changes:
 
 ---
 
+## CI/CD Baseline
+
+The repository currently calls the centralized documentation CI from `securedelivery-main`. Do not claim to lint, test or build the Next.js application until it is initialized.
+
+After bootstrap, extend the repository CI with the real locked install, lint, test and build scripts from `package.json`. Keep GitHub Actions as the single pipeline platform, use read-only permissions by default and do not add deployment before environments, secrets, health checks and rollback are decided.
+
+---
+
 ## Architectural Decision Records
 
 Document meaningful decisions under:
@@ -215,6 +223,10 @@ Customers should be able to:
 
 Do not expose cross-customer data.
 
+Use the technical `DeviceRequest` API resource for SmartBox Request screens. Do not invent `/smartbox-requests` routes.
+
+Use the explicit `fulfill` and `cancel` actions. Customers may cancel only their own pending requests; fulfillment is administrative. Preserve and present terminal audit facts where appropriate.
+
 ---
 
 ## SmartBox UI
@@ -291,6 +303,8 @@ Do not assume WebSocket delivery is guaranteed.
 
 After reconnecting, refresh authoritative state when needed.
 
+Socket connections use human authentication. Treat RBAC and tenant filtering as server responsibilities, and never subscribe a Customer to another tenant's resources.
+
 ---
 
 ## Support Tickets
@@ -306,6 +320,8 @@ Support screens should support:
 - realtime messages
 
 Realtime UI should be reconciled with server-persisted state.
+
+Recover ticket messages through paginated HTTP history. Use explicit resolve and close operations. Recover persisted Notifications through HTTP and update read state through the API; realtime notification events are signals only.
 
 ---
 

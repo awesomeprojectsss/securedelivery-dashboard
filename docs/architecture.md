@@ -77,6 +77,7 @@ Users
 Roles
 Customers
 Devices
+DeviceRequests
 DeviceActivation
 Monitoring
 Deliveries
@@ -145,6 +146,8 @@ deviceId                    internal/technical identifier
 Do not alter shared API terminology for presentation convenience.
 
 The frontend may use presentation adapters/view models where needed.
+
+SmartBox Request screens consume the technical `DeviceRequest` resource. They invoke explicit fulfill/cancel actions, expose only RBAC-authorized actions and show immutable terminal audit facts. The lifecycle maps `PENDING`, `FULFILLED` and `CANCELLED` without introducing billing or shipment behavior.
 
 ## 7. RBAC Presentation
 
@@ -237,7 +240,7 @@ Possible UI concerns include:
 - already activated
 - successful association
 
-The exact routing/deep-link implementation is not yet defined.
+The activation client reads bootstrap material from the QR web link fragment, removes it from visible browser history and submits it only in JSON request bodies to the canonical validate/confirm endpoints. It never places the secret in a path/query or logs it.
 
 ---
 
@@ -357,6 +360,8 @@ WebSocket messages are not authoritative persistence.
 
 On reconnect, the frontend should refresh data where needed.
 
+WebSocket uses authenticated human identity and server-authorized tenant subscriptions. Notifications, tickets, events and Device state remain recoverable through HTTP.
+
 ---
 
 ## 14. Support Tickets
@@ -373,6 +378,8 @@ Ticket UI should include:
 - close/resolve actions
 
 Persistent server history remains authoritative.
+
+Ticket messages are loaded through paginated HTTP history, and resolve/close are distinct actions. Persisted Notifications are listed and marked read through HTTP; `notification.created` only prompts reconciliation.
 
 ---
 
